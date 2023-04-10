@@ -53,19 +53,22 @@ a {
   text-decoration: none;
 }
 .btn {
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 12px 20px;
   border: none;
   color: white;
   font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Topbar  section*/
 
 .Topbar {
-  padding: 25px 0px;
+  padding: 42px 0px;
   /* display: flex; */
 }
 /* .Topbar > * {
@@ -90,7 +93,7 @@ a {
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  /* margin: 5px 2px; */
   border-radius: 50%;
 }
 
@@ -304,20 +307,21 @@ a {
 }
 /* services */
 .services {
-  padding: 40px 40px 112px 40px;
+  padding: 70px 40px 130px;
   background: white;
 }
 .services_card {
-  width: 100%;
+  width: 70%;
   /* width: 18rem; */
   background: #fff;
-  padding: 30px 25px;
+  padding: 30px 30px;
   position: relative;
   border-radius: 4px;
   -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   border: none;
+  text-align: center;
 }
 .services_icon {
   background: rgba(0, 0, 0, 0.05);
@@ -332,6 +336,29 @@ a {
   font-weight: bold;
 }
 
+/* service flexbox */
+.service_grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.services h5 {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.services p {
+  margin-top: 10px;
+}
+.services_right {
+  padding: 0px 10px;
+}
+.btn-services {
+  padding: 20px 25px !important;
+}
+.service_subheading {
+  margin-bottom: 30px;
+}
 /* WELLCOME SECTION */
 .welcome {
   background: #f8f9fa;
@@ -384,8 +411,32 @@ a {
   color: white;
 }
 
+/* welcome flexbox */
+.welcome_grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.welcome_grid_item_2 {
+  padding: 0px 40px;
+}
+.welcome .heading {
+  /* margin-top: 10px;
+  margin-bottom: 30px; */
+  width: 400px;
+}
+.welcome .text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.fa-arrow-right:before {
+  content: "\f061";
+  margin: 10px 15px;
+}
+/* Seson  */
 .season_container {
   padding: 7rem 0;
+  text-align: center;
 }
 .seasonal_image {
   height: 300px;
@@ -418,8 +469,18 @@ a {
   color: #000000;
   font-size: 22px;
   font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
-
+.seasonal .seasonImage_card_text p {
+  padding: 0px 50px;
+}
+/* seasonal flexbox */
+.seasonGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
 /* CONTACT US */
 .contact_us {
   padding: 48px 0px;
@@ -434,17 +495,27 @@ a {
   font-weight: 700;
   font-family: "Lato", Arial, sans-serif;
 }
-
+/* contact us flexbox */
+.contact_us_grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+}
+.contact_us .text {
+  width: 480px;
+}
 /* TESTIMONIAL */
 .testimony-wrap {
   display: block;
   position: relative;
   background: rgba(255, 255, 255, 0.1);
-  padding: 0 20px;
+  padding: 20px 20px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+  text-align: left;
 }
 
 .testimony-wrap .name {
@@ -483,11 +554,18 @@ a {
 .user_image_3 {
   background-image: url(../images/person_3.jpg.webp);
 }
+/* testimoni Flexbox */
+.testimoni_person_grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 25px;
+}
 
 /*  BLOG SECTION */
 .blog {
   background: #f8f9fa !important;
-  padding: 0rem 0 10rem 0;
+  padding: 5rem 0;
 }
 .blog_image_1 {
   background-image: url("../images/image_1.jpg.webp");
@@ -505,6 +583,7 @@ a {
 }
 .blog .subHeading {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 .blog_image {
   height: 300px;
@@ -523,12 +602,13 @@ a {
 .blogImage_card_text {
   padding: 15px 20px;
   background: white;
+  height: 220px;
 }
 .blog_date_container {
   padding: 10px 10px;
   margin: 0px 10px 0px 5px;
   width: 10rem;
-  margin-top: -300px;
+  margin-top: -268px;
 }
 .blog span.day {
   font-size: 44px;
@@ -543,6 +623,17 @@ a {
   display: block;
   color: rgba(255, 255, 255, 0.7);
 }
+/* blog flexbox */
+
+.blog_date_grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.text_center {
+  text-align: center;
+}
+
 /* NEWS LETTER */
 .newsLetter {
   padding: 24px 0px;
@@ -562,6 +653,10 @@ a {
 }
 .Subcribe {
   width: 22rem;
+}
+/* news letter Flexbox */
+.newsLetter_flex {
+  justify-content: center;
 }
 
 /* FOOTER */
