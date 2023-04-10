@@ -27,9 +27,9 @@
   <body>
     <div class="main">
       <header class="header">
-        <div class="containerTopbar">
-          <div class="Topbar">
-            <div class="">
+        <div class="container">
+          <div class="Topbar grid-3">
+            <div class="navContent">
               <div class="social_media">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
@@ -37,12 +37,18 @@
                 <a href="#" class="fa fa-linkedin"></a>
               </div>
             </div>
-            <div class="">
+            <div class="navContent">
               <div class="text-center mt-2">
                 <img src="./styles/images/LawnCare.png" alt="" />
               </div>
             </div>
-            <div class="">
+            <div class="navContent">
+              <!-- <div class="showcase-form searchform">
+                <form action="">
+                  <input type="email" placeholder="Enter your email address" />
+                  <input type="submit" class="btn" value="Start Learning" />
+                </form>
+              </div> -->
               <div class="text-center mt-2">
                 <div class="input-group mb-3">
                   <input
@@ -53,9 +59,9 @@
                     aria-describedby="basic-addon2"
                   />
                   <div class="input-group-append">
-                    <button class="btn search_btn" type="button">
+                    <!-- <button class="btn search_btn" type="button">
                       <i class="fa fa-search"></i>
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </div>
@@ -64,41 +70,20 @@
         </div>
       </header>
       <nav class="navbar2">
-        <div class="container">
-          <nav class="navbar-expand-lg ftco-navbar-light">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-              
-              </ul>
-            </div>
+        <div class="container flex">
+          <!-- <h1 class="logo">BD jobs</h1> -->
+          <nav>
+            <ul>
+              <li class="nav"><a class="outline" href="">Home </a></li>
+              <li class="nav"><a class="outline" href="">About US</a></li>
+              <li class="nav"><a class="outline" href="">Contact US</a></li>
+              <li class="nav"><a class="outline" href="">Portfolio</a></li>
+              <li class="nav"><a class="outline" href=""> Srvices</a></li>
+
+              <li class="nav"><a class="outline btn" href="">Log in</a></li>
+
+              <!-- <li class="nav"><a href="" class="outline btn">Check courses</a></li> -->
+            </ul>
           </nav>
         </div>
       </nav>
@@ -106,20 +91,18 @@
         <section class="hero">
           <div class="overlay"></div>
           <div class="container">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="grid">
+              <div class="grid-item-1">
                 <div class="hero_content">
                   <h5 class="subheading">WELCOME TO LAWN CARE</h5>
                   <h1 class="heading">Lawn care for everyone</h1>
                   <h4>Let us work on your yard</h4>
-                  <p>
-                    <a href="#" class="btn btn-primary mr-md-4 py-2 px-4"
-                      >Learn more <span class="ion-ios-arrow-forward"></span
-                    ></a>
-                  </p>
+                  <a href="#" class="btn btn-primary"
+                  >Learn more <span class="ion-ios-arrow-forward"></span
+                ></a>
                 </div>
               </div>
-              <div class="col-md-6"></div>
+              <div class="grid-item-2"></div>
             </div>
           </div>
         </section>
