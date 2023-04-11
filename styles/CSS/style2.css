@@ -10,6 +10,8 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  line-height: 1.8;
+  font-weight: 400;
 }
 html,
 body {
@@ -638,12 +640,16 @@ a {
 .newsLetter {
   padding: 24px 0px;
 }
+.newsLetter h2 {
+  font-weight: 400;
+}
 .newsLetter .form-control {
   background: white !important;
   border: 1px solid transparent;
   color: rgba(0, 0, 0, 0.7) !important;
   font-size: 16px;
   border-radius: 5px 0px 0px 5px;
+  padding: 10px;
 }
 .newsLetter .submit {
   color: #fff !important;
@@ -653,10 +659,12 @@ a {
 }
 .Subcribe {
   width: 22rem;
+  display: flex;
 }
 /* news letter Flexbox */
 .newsLetter_flex {
   justify-content: center;
+  gap: 60px;
 }
 
 /* FOOTER */
@@ -667,8 +675,8 @@ a {
 }
 .footer .social_media a {
   background: rgba(255, 255, 255, 0.05);
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   border-radius: 50%;
   margin-right: 4px;
   color: #ffffff;
@@ -688,6 +696,8 @@ a {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  margin: 40px 0px 40px 0px;
+  line-height: 2;
 }
 .footer .widget_1 ul li a {
   color: #fff;
@@ -703,7 +713,7 @@ a {
   margin-bottom: 15px;
 }
 
-.block-23 ul li .icon {
+.block-23 ul li i {
   width: 40px;
   font-size: 18px;
   padding-top: 2px;
@@ -724,4 +734,34 @@ a {
 
 .block-23 ul li span {
   color: rgba(255, 255, 255, 0.7);
+}
+.footer .opening-hours h4 {
+  color: #fbd341;
+  font-size: 16px;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 16px;
+}
+/* Footer Flexbox */
+.footer_content {
+  display: flex;
+  gap: 20px;
+  padding: 0px 0px 50px 0px;
+}
+.footer_item {
+  flex: 1 200px;
+  padding: 0px 20px;
+}
+.footerText {
+  margin: 30px 0px 40px 0px;
+}
+.footer .fa {
+  text-align: left;
+}
+.footer .item_content {
+  margin-top: 40px;
+}
+.copyright {
+  text-align: center;
 }
