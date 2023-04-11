@@ -2,7 +2,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font: normal 16px sans-serif;
+  color: #555;
+}
+
 body {
   background: #727272;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16,7 +23,7 @@ body {
 html,
 body {
   min-height: 100%;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 body,
 h1,
@@ -71,7 +78,9 @@ a {
 
 .Topbar {
   padding: 42px 0px;
-  /* display: flex; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* .Topbar > * {
   flex: 1;

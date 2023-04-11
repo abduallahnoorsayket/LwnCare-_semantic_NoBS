@@ -3,5 +3,6 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.fontSize": 18
+    "editor.fontSize": 18,
+    "liveServer.settings.port": 5501
 }
