@@ -765,3 +765,31 @@ a {
 .copyright {
   text-align: center;
 }
+
+/*============= ABOUT US PAGE====== */
+
+.hero_about {
+  background-image: url("../images/bg_2.jpg.webp");
+  background-color: #cccccc;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  background-position: 50% -108.594px;
+}
+
+.hero_about .hero_content {
+  text-align: center;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  */
+  color: white;
+  position: initial;
+  padding: 260px 10px;
+}
+.hero_about .grid-item-about {
+  display: flex;
+  text-align: center;
+}
