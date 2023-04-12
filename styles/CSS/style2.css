@@ -417,9 +417,23 @@ a {
 .hero .flex_item {
   flex: 1 600px;
 }
+/* Hero Responsive */
+@media (max-width: 1000px) {
+  .hero {
+    background-size: auto;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero .heading {
+    font-size: 50px;
+  }
+}
+
 /* services */
 .services {
-  padding: 70px 40px 10px;
+  padding: 70px 20px 10px;
   background: white;
 }
 .services_card {
@@ -532,12 +546,11 @@ a {
   display: flex;
   /* grid-template-columns: 50% 50%; */
 }
-.welcome_flex > * {
-  flex: 1;
+.welcome_item_1 {
+  width: 50%;
 }
-
-.welcome_grid_item_2 {
-  padding: 0px 40px;
+.welcome_item_2 {
+  width: 50%;
 }
 .welcome .heading {
   /* margin-top: 10px;
@@ -565,6 +578,12 @@ a {
   }
   .welcome_text_container {
     margin-left: 0px;
+  }
+  .welcome_item_1 {
+    width: 100%;
+  }
+  .welcome_item_2 {
+    width: 100%;
   }
 }
 
@@ -608,7 +627,7 @@ a {
   margin-bottom: 15px;
 }
 .seasonal .seasonImage_card_text p {
-  padding: 0px 50px;
+  padding: 0px 35px;
 }
 /* seasonal flexbox */
 .seasonFlex {
@@ -621,6 +640,9 @@ a {
   .seasonFlex {
     display: flex;
     gap: 20px;
+  }
+  .seasonal .seasonImage_card_text p {
+    padding: 0px 5px;
   }
 }
 
@@ -942,7 +964,7 @@ a {
   border-radius: 50%;
   margin-right: 4px;
   color: #ffffff;
-  padding: 20px 20px;
+  padding: 20px 15px;
 }
 .footer .social_media i {
   font-size: 15px;
@@ -980,18 +1002,7 @@ a {
   font-size: 18px;
   padding-top: 2px;
   color: white;
-}
-
-.block-23 ul li .icon,
-.block-23 ul li .text {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.block-23 ul li .icon,
-.block-23 ul li .text {
-  display: table-cell;
-  vertical-align: top;
+  text-align: left;
 }
 
 .block-23 ul li span {
@@ -1006,7 +1017,7 @@ a {
   padding-left: 16px;
 }
 /* Footer Flexbox */
-.footer_content {
+.footer_flex {
   display: flex;
   gap: 20px;
   padding: 0px 0px 50px 0px;
@@ -1018,14 +1029,27 @@ a {
 .footerText {
   margin: 30px 0px 40px 0px;
 }
-.footer .fa {
-  text-align: left;
-}
+
 .footer .item_content {
   margin-top: 40px;
 }
 .copyright {
   text-align: center;
+}
+/* Footer  responsive */
+@media (max-width: 1000px) {
+  .footer_flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer_flex {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /*============= ABOUT US PAGE====== */
