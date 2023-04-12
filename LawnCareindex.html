@@ -66,9 +66,8 @@
         </div>
       </div>
     </header>
-    <nav class="navbar2">
+    <!-- <nav class="navbar2">
       <div class="container flex">
-        <!-- <h1 class="logo">BD jobs</h1> -->
         <nav>
           <ul>
             <li class="nav">
@@ -87,11 +86,54 @@
             <li class="nav"><a class="outline" href="">Blog</a></li>
             <li class="nav"><a class="outline" href="">Contact US</a></li>
 
-            <!-- <li class="nav"><a href="" class="outline btn">Check courses</a></li> -->
           </ul>
         </nav>
       </div>
-    </nav>
+    </nav> -->
+    <!-- New navugiationMenu -->
+          
+    <div class="Navbar">
+      <!-- <div class="Navbar__Link Navbar__Link-brand">
+         Website title
+       </div> -->
+       <div class="Navbar__Link Navbar__Link-toggle">
+         <i class="fa fas fa-bars"></i>
+       </div>
+     <nav class="Navbar__Items">
+       <div class="Navbar__Link">
+        <a class="outline" href="./LawnCareindex.html"><span class="secondary">Home</span> </a>
+       </div>
+       <div class="Navbar__Link">
+        <a class="outline" href="./LwnAboutUS.html"
+        >About US</a
+      >
+       </div>
+       <div class="Navbar__Link">
+        <a class="outline" href="./LwnServices.html"> Services </a>
+       </div>
+      
+       <div class="Navbar__Link">
+        <a class="outline" href="">Gallery</a>
+      </div>
+     
+      <div class="Navbar__Link">
+        <a class="outline" href="">Blog</a>
+      </div>
+     
+      <div class="Navbar__Link">
+        <a class="outline" href="">Contact US</a>
+      </div>
+     
+     </nav>
+     <!-- <nav class="Navbar__Items Navbar__Items--right">
+       <div class="Navbar__Link">
+         Link
+       </div>
+       <div class="Navbar__Link">
+         Link
+       </div>
+     </nav> -->
+   </div>
     <main>
       <section class="hero">
         <div class="overlay"></div>
@@ -115,8 +157,8 @@
       </section>
       <section class="services">
         <div class="container">
-          <div class="service_grid">
-            <div class="g">
+          <div class="service_flex_container">
+            <div class="card_container">
               <div class="services_card">
                 <div class="card_content">
                    <span class="services_icon">
@@ -134,7 +176,7 @@
                 </div>
               </div>
             </div>
-            <div class="g">
+            <div class="card_container">
               <div class="services_card">
                 <div class="card_content">
                    <span class="services_icon">
@@ -144,16 +186,15 @@
                     <img src="./styles/images/service 1.png" alt="">
 
                    </span>
-                  <h5 class="card-title mt-5">Garden Care</h5>
-                  <p class="card-text text-muted">
+                  <h5 class="">Garden Care</h5>
+                  <p class="">
                     Seeking justice in the world is a sed significant
                     emotional and investment when we follow this call.
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="g">
-              <div class="card services_card mr-4">
+            </div> <div class="card_container">
+              <div class="services_card">
                 <div class="card_content">
                    <span class="services_icon">
                     
@@ -162,18 +203,17 @@
                     <img src="./styles/images/service 1.png" alt="">
 
                    </span>
-                  <h5 class="card-title mt-5">Garden Care</h5>
-                  <p class="card-text text-muted">
+                  <h5 class="">Garden Care</h5>
+                  <p class="">
                     Seeking justice in the world is a sed significant
                     emotional and investment when we follow this call.
                   </p>
                 </div>
               </div>
             </div>
-             
-              
-            <div class="g">
-             <div class="services_right">
+            
+          <div class="card_container">
+            <div class="services_right">
               <span class="subheading">Services</span>
               <h2 class="heading mb-4 mt-2">Lawn Services</h2>
               <p class="service_subheading">
@@ -182,7 +222,9 @@
               </p>
               <p><a href="#" class="btn btn-primary btn-services">Get a Quote</a></p>
              </div>
-            </div>
+          </div>
+            
+            
             </div>
             
           </div>
@@ -191,12 +233,12 @@
 
       <section class="welcome">
         <div class="container">
-          <div class="welcome_grid">
-            <div class="welcome_grid_item_1">
+          <div class="welcome_flex">
+            <div class="welcome_item_1">
               <div class="welcome_image">
               </div>
             </div>
-            <div class="welcome_grid_item_2">
+            <div class="welcome_item_2">
               <div class="welcome_text_container">
                 <span class="subheading">Welcome to Lawn Care
                 </span>
@@ -244,7 +286,7 @@
           </span>
         <h2 class="heading">Welcome to Lawn Care Company</h2>
 
-          <div class="seasonGrid seasonImage_card">
+          <div class="seasonFlex seasonImage_card">
             <div class="">
                 <div class="seasonal_image season_image_1">
 
@@ -271,7 +313,7 @@
               <h3>Fall</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
-        </div>
+          </div>
           </div>
 
          </div>
@@ -280,7 +322,7 @@
       </section>
       <section class="contact_us primary">
         <div class="container">
-          <div class="contact_us_grid">
+          <div class="contact_us_flex">
             <div class="text white">
               <h2 class="heading mb-4 mt-3">Contact with us
               </h2>
@@ -306,56 +348,43 @@
         </h2>
 
         </div>
-          <div class="seasonGrid seasonImage_card">
-            <div class="">
+          <div class="testimonial_flex seasonImage_card">
+            <div class="testimony-wrap">
+              <div class="text">
+              <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="testimoni_person_grid">
+                  <div class="user-img text-center user_image_1"></div>
+                  <div class="person_info">
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              </div>
               <div class="testimony-wrap">
                 <div class="text">
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                   <div class="testimoni_person_grid">
-                    <div class="">
+                    <div class="user-img text-center user_image_3"></div>
+                    <div class="person_info">
+                      <p class="name">Roger Scott</p>
+                      <span class="position">Marketing Manager</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="testimony-wrap">
+                  <div class="text">
+                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="testimoni_person_grid">
                       <div class="user-img text-center user_image_1"></div>
-                    </div>
-                    <div class="">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div class="">
-              <div class="testimony-wrap">
-                <div class="text">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <div class="testimoni_person_grid">
-                    <div class="">
-                      <div class="user-img text-center user_image_2"></div>
-                    </div>
-                    <div class="col-md">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
+                      <div class="person_info">
+                        <p class="name">Roger Scott</p>
+                        <span class="position">Marketing Manager</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                </div>
-            </div>
-            <div class="">
-              <div class="testimony-wrap">
-                <div class="text">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <div class="testimoni_person_grid">
-                    <div class="">
-                      <div class="user-img text-center user_image_2"></div>
-                    </div>
-                    <div class="col-md">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
-                    </div>
                   </div>
-                </div>
-                </div>
-            </div>
-           
           </div>
 
          </div>
@@ -371,8 +400,8 @@
               </span>
             <h2 class="mianheading mb-4 mt-3">Recent Blog</h2>
             </div>
-           <div class="seasonGrid seasonImage_card">
-             <div class="">
+           <div class="blog_flex seasonImage_card">
+             <div class="blog_card_container">
                  <div class="blog_image blog_image_1">
 
                  </div>
@@ -380,11 +409,9 @@
                    <h3 class="heading">All you want to know about industrial laws</h3>
                    <p class="subHeading">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                    <p><a href="#" class="btn btn-primary">Read more</a></p>
-                   <div class="blog_date_grid primary blog_date_container">
-                    <div class="">
-                      <span class="day">24</span>
-                    </div>
-                    <div class="">
+                   <div class="blog_date_flex primary blog_date_container">
+                    <span class="day">24</span>
+                    <div class="blog_year">
                       <span class="yr">2020</span>
                       <span class="mos">January</span>
                     </div>
@@ -392,7 +419,7 @@
                  </div>
                  
              </div>
-             <div class="">
+             <div class="blog_card_container">
               <div class="blog_image blog_image_2">
 
               </div>
@@ -400,11 +427,9 @@
                 <h3 class="heading">All you want to know about industrial laws</h3>
                 <p class="subHeading">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <p><a href="#" class="btn btn-primary">Read more</a></p>
-                <div class="blog_date_grid primary blog_date_container">
-                 <div class="">
-                   <span class="day">24</span>
-                 </div>
-                 <div class="">
+                <div class="blog_date_flex primary blog_date_container">
+                 <span class="day">24</span>
+                 <div class="blog_year">
                    <span class="yr">2020</span>
                    <span class="mos">January</span>
                  </div>
@@ -412,7 +437,7 @@
               </div>
               
           </div>
-          <div class="">
+          <div class="blog_card_container">
             <div class="blog_image blog_image_3">
 
             </div>
@@ -420,11 +445,9 @@
               <h3 class="heading">All you want to know about industrial laws</h3>
               <p class="subHeading">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <p><a href="#" class="btn btn-primary">Read more</a></p>
-              <div class="blog_date_grid primary blog_date_container">
-               <div class="">
-                 <span class="day">24</span>
-               </div>
-               <div class="">
+              <div class="blog_date_flex primary blog_date_container">
+               <span class="day">24</span>
+               <div class="blog_year">
                  <span class="yr">2020</span>
                  <span class="mos">January</span>
                </div>
@@ -534,6 +557,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
