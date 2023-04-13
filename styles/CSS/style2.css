@@ -170,6 +170,10 @@ a {
 @media (max-width: 1000px) {
   .Topbar {
     justify-content: space-around;
+    padding: 42px 30px;
+  }
+  .Topbar .searchform {
+    width: 170px;
   }
 }
 
@@ -436,11 +440,11 @@ a {
 
 /* services */
 .services {
-  padding: 70px 20px 10px;
+  padding: 30px 20px 112px;
   background: white;
 }
 .services_card {
-  width: 70%;
+  width: 25%;
   /* width: 18rem; */
   background: #fff;
   padding: 30px 20px;
@@ -451,6 +455,8 @@ a {
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   border: none;
   text-align: center;
+  height: 270px;
+  margin-left: 20px;
 }
 .services_icon {
   background: rgba(0, 0, 0, 0.05);
@@ -464,15 +470,24 @@ a {
 .services_card .card-title {
   font-weight: bold;
 }
+/* .card_content {
+  padding: 0px 35px;
+} */
 
 /* service flexbox */
 .service_flex_container {
   overflow: visible;
   display: flex;
   height: 450px;
+  gap: 20px;
+  align-items: center;
+}
+.services .container {
+  /* overflow: visible; */
 }
 .service_flex_container .card_container {
-  flex: 1 300px;
+  flex: 1 380px;
+  margin-left: 20px;
 }
 .services h5 {
   margin-top: 50px;
@@ -483,7 +498,7 @@ a {
   margin-top: 10px;
 }
 .services_right {
-  padding: 0px 10px;
+  padding: 0px 40px 0px 0px;
 }
 .btn-services {
   padding: 20px 25px !important;
@@ -491,6 +506,52 @@ a {
 .service_subheading {
   margin-bottom: 30px;
 }
+/* services Responsive */
+@media (max-width: 1000px) {
+  .service_flex_container .card_container {
+    flex: 1 550px;
+    margin-left: 25px;
+  }
+  .service_flex_container {
+    overflow: visible;
+    display: flex;
+    height: 700px;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .services_card {
+    flex: 1;
+    margin-right: 20px;
+    padding: 30px 20px 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .service_flex_container .card_container {
+    flex: 1 300px;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  .service_flex_container {
+    overflow: visible;
+    display: flex;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  .services_card {
+    flex: 1;
+    margin-right: 20px;
+    padding: 30px 20px 60px;
+    width: 78%;
+    margin-top: 20px;
+  }
+}
+
 /* WELLCOME SECTION */
 .welcome {
   background: #f8f9fa;
@@ -1099,13 +1160,16 @@ a {
 .hero_about h4 {
   font-weight: 500;
 }
-/* Hero About  responsive */
+/* Hero About us  responsive */
 @media (max-width: 1000px) {
   .hero_about {
     background-position: center center !important;
   }
   .hero_about .heading {
     font-size: 40px;
+  }
+  .welcome_image {
+    height: 835px;
   }
 }
 
