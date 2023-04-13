@@ -67,6 +67,15 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.fa {
+  /* padding: 20px; */
+  /* font-size: 30px; */
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  border-radius: 50%;
+}
 /* Global resoponsive */
 @media (max-width: 1000px) {
   section {
@@ -108,14 +117,15 @@ a {
   font-size: 15px;
 }
 
-.fa {
+.Topbar .fa {
   /* padding: 20px; */
   /* font-size: 30px; */
-  width: 30px;
+  width: 0px;
   text-align: center;
   text-decoration: none;
   /* margin: 5px 2px; */
   border-radius: 50%;
+  display: block;
 }
 
 .fa:hover {
@@ -148,19 +158,16 @@ a {
   border-radius: 50%;
   border: none;
   border-radius: 50px;
-  margin-left: -20px;
+  margin-left: -40px;
 }
 
 .fa-search:before {
   content: "\f002";
   color: white;
-  padding: 5px;
+  padding: 0px !important;
 }
 /*  Topbar resposive */
 @media (max-width: 1000px) {
-  .header {
-    /* padding: 20px 50px; */
-  }
   .Topbar {
     justify-content: space-around;
   }
@@ -170,10 +177,6 @@ a {
   .Topbar {
     flex-direction: column;
     gap: 15px;
-  }
-
-  header h2 {
-    /* margin-bottom: 15px; */
   }
 }
 
@@ -342,7 +345,7 @@ a {
   background-color: #cccccc;
   /* background-position: center; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   position: relative;
 
   height: 887px;
@@ -499,7 +502,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 720px;
+  height: 780px;
 }
 .welcome_text_container {
   padding: 48px 25px;
@@ -509,7 +512,7 @@ a {
 .welcome_servieces_wrap .welcome_services_list {
   font-size: 18px;
   margin-bottom: 20px;
-  padding: 20px 30px;
+  padding: 25px 30px;
   background: #fff;
   color: #000000;
   border-radius: 4px;
@@ -519,8 +522,46 @@ a {
   -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
 }
+.welcome_services_list:hover {
+  background: #4e9525;
+  color: #fff;
+}
 
-.welcome_servieces_wrap .welcome_services_list .btn-custom {
+.welcome_services_list:hover .arrow_btn {
+  background: #fbd341;
+  color: #4e9525;
+}
+
+.welcome .fa {
+  width: 0px;
+}
+
+/* welcome flexbox */
+.welcome_flex {
+  overflow: visible;
+  display: flex;
+  /* grid-template-columns: 50% 50%; */
+}
+.welcome_item_1 {
+  width: 50%;
+}
+.welcome_item_2 {
+  width: 50%;
+}
+.welcome .heading {
+  width: 400px;
+  margin: 20px 0px 25px 0px;
+}
+.welcome .text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.fa-arrow-right:before {
+  content: "\f061";
+  margin: -5px;
+}
+.welcome .arrow_btn {
   position: absolute;
   top: 50%;
   right: -25px;
@@ -538,32 +579,6 @@ a {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: white;
-}
-
-/* welcome flexbox */
-.welcome_flex {
-  overflow: visible;
-  display: flex;
-  /* grid-template-columns: 50% 50%; */
-}
-.welcome_item_1 {
-  width: 50%;
-}
-.welcome_item_2 {
-  width: 50%;
-}
-.welcome .heading {
-  /* margin-top: 10px;
-  margin-bottom: 30px; */
-  width: 400px;
-}
-.welcome .text {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.fa-arrow-right:before {
-  content: "\f061";
-  margin: 10px 15px;
 }
 
 /* welcome responsive */
@@ -656,11 +671,12 @@ a {
 
 /* CONTACT US */
 .contact_us {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .contact_us p {
   color: white;
+  width: 500px;
 }
 
 .contact_number {
@@ -679,10 +695,9 @@ a {
 
 /* Contact US responsive */
 @media (max-width: 1000px) {
-  /* .contact_us_flex {
-    display: flex;
-    gap: 20px;
-  } */
+  .contact_us p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1063,6 +1078,7 @@ a {
   position: relative;
   height: 500px;
   background-position: 50% -108.594px;
+  display: flex;
 }
 
 .hero_about .hero_content {
@@ -1078,4 +1094,23 @@ a {
 .hero_about .grid-item-about {
   display: flex;
   text-align: center;
+}
+
+.hero_about h4 {
+  font-weight: 500;
+}
+/* Hero About  responsive */
+@media (max-width: 1000px) {
+  .hero_about {
+    background-position: center center !important;
+  }
+  .hero_about .heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero_about .grid-item-1 {
+    right: 80px;
+  }
 }
