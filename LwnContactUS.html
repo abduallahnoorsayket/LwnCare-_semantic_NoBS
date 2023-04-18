@@ -22,9 +22,9 @@
     />
 
     <link rel="stylesheet" href="./styles/CSS/style2.css" />
-    <title>Gallery</title>
+    <title>Contact Us</title>
   </head>
-  <body id="Gallery_list">
+  <body>
     <header class="header">
       <div class="container">
         <div class="Topbar">
@@ -80,16 +80,16 @@
           <a class="outline" href="./LawnCareindex.html"><span>Home</span> </a>
         </div>
         <div class="Navbar__Link">
-          <a class="outline" href="./LwnAboutUS.html"> About US </a>
+          <a class="outline" href="./LwnAboutUS.html">
+            <span>About US</span>
+          </a>
         </div>
         <div class="Navbar__Link">
           <a class="outline" href="./LwnServices.html"> Services </a>
         </div>
 
         <div class="Navbar__Link">
-          <a class="outline" href="./LwnGallery.html">
-            <span class="secondary">Gallery</span>
-          </a>
+          <a class="outline" href="./LwnGallery.html">Gallery</a>
         </div>
 
         <div class="Navbar__Link">
@@ -97,19 +97,21 @@
         </div>
 
         <div class="Navbar__Link">
-          <a class="outline" href="./LwnContactUS.html">Contact US</a>
+          <a class="outline" href="./LwnContactUS.html"
+            ><span class="secondary">Contact US</span></a
+          >
         </div>
       </nav>
     </div>
-    <main>
+    <main id="contact_us">
       <section class="hero hero_about">
         <div class="overlay"></div>
         <div class="container">
           <div class="">
             <div class="grid-item-1">
               <div class="hero_content">
-                <h1 class="heading">Our Services</h1>
-                <h4>Home > Services</h4>
+                <h1 class="heading">Contact us</h1>
+                <h4>Home > Contact us</h4>
                 <!-- <a href="#" class="btn btn-primary"
                   >Learn more <span class="ion-ios-arrow-forward"></span
                 ></a> -->
@@ -119,81 +121,196 @@
         </div>
       </section>
 
-      <section class="gallery">
-        <div class="gallery_flex">
-          <div class="gallery_image gallery_1">
-            <a href="images/gallery-1.jpg" class="icon image-popup">
-              <!-- <span class="icon-expand"></span> -->
-              <span><i class="fas fa fa-angle-double-right"></i></span>
-            </a>
-            <div class="gallery_text_container">
-              <div class="text_content">
-                <span>Nature</span>
-                <h2>Beautiful Work</h2>
+      <section class="icon_list">
+        <div class="container">
+          <div class="icon_list_container">
+            <div class="icon_container">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="fa fa-map-marker"></span>
+              </div>
+              <div class="text">
+                <p>
+                  <span class="icon_label">Address:</span> 198 West 21th Street,
+                  Suite 721 New York NY 10016
+                </p>
               </div>
             </div>
-          </div>
-          <div class="gallery_image gallery_2">
-            <a href="images/gallery-1.jpg" class="icon image-popup">
-              <!-- <span class="icon-expand"></span> -->
-              <span><i class="fas fa fa-angle-double-right"></i></span>
-            </a>
-            <div class="gallery_text_container">
-              <div class="text_content">
-                <span>Nature</span>
-                <h2>Beautiful Work</h2>
+            <div class="icon_container">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="fa fa-globe"></span>
+              </div>
+              <div class="text">
+                <p>
+                  <span class="icon_label">Phone:</span>
+                  <span class="icon_text">+ 1235 2355 98</span>
+                </p>
               </div>
             </div>
-          </div>
-          <div class="gallery_image gallery_3">
-            <a href="images/gallery-1.jpg" class="icon image-popup">
-              <!-- <span class="icon-expand"></span> -->
-              <span><i class="fas fa fa-angle-double-right"></i></span>
-            </a>
-            <div class="gallery_text_container">
-              <div class="text_content">
-                <span>Nature</span>
-                <h2>Beautiful Work</h2>
+            <div class="icon_container">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="fa fa-phone"></span>
+              </div>
+              <div class="text">
+                <p>
+                  <span class="icon_label">Email:</span>
+                  <span class="icon_text">info@yoursite.com</span>
+                </p>
+              </div>
+            </div>
+            <div class="icon_container">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="fa fa-map-marker"></span>
+              </div>
+              <div class="text">
+                <p>
+                  <span class="icon_label">Website:</span>
+                  <span class="icon_text"> yoursite.com</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="welcome">
+        <div class="container">
+          <div class="welcome_flex">
+            <div class="welcome_item_1">
+              <div class="welcome_text_container">
+                <!-- <span class="subheading">Welcome to Lawn Care </span> -->
+                <h3 class="form_heading">Contact Us</h3>
+                <p class="text">Your message was sent, thank you!</p>
+                <div class="welcome_servieces_wrap">
+                  <form
+                    method="POST"
+                    id="contactForm"
+                    name="contactForm"
+                    class="contactForm"
+                  >
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="label" for="name">Full Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="name"
+                            id="name"
+                            placeholder="Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="label" for="email">Email Address</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="subject">Subject</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="subject"
+                            id="subject"
+                            placeholder="Subject"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <grammarly-extension
+                          data-grammarly-shadow-root="true"
+                          class="dnXmp"
+                          style="
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            pointer-events: none;
+                          "
+                        ></grammarly-extension
+                        ><grammarly-extension
+                          data-grammarly-shadow-root="true"
+                          class="dnXmp"
+                          style="
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            pointer-events: none;
+                          "
+                        ></grammarly-extension>
+                        <div class="form-group">
+                          <label class="label" for="#">Message</label>
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            id="message"
+                            cols="30"
+                            rows="4"
+                            placeholder="Message"
+                            spellcheck="false"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input
+                            type="submit"
+                            value="Send Message"
+                            class="btn btn-primary"
+                          />
+                          <div class="submitting"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- Dummy form -->
+                  <!-- <div>
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input
+                        type="text"
+                        id="fname"
+                        name="firstname"
+                        placeholder="Your name.."
+                      />
 
-        <div class="gallery_flex">
-          <div class="gallery_image gallery_4">
-            <a href="images/gallery-1.jpg" class="icon image-popup">
-              <!-- <span class="icon-expand"></span> -->
-              <span><i class="fas fa fa-angle-double-right"></i></span>
-            </a>
-            <div class="gallery_text_container">
-              <div class="text_content">
-                <span>Nature</span>
-                <h2>Beautiful Work</h2>
+                      <label for="lname">Last Name</label>
+                      <input
+                        type="text"
+                        id="lname"
+                        name="lastname"
+                        placeholder="Your last name.."
+                      />
+
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+
+                      <input type="submit" value="Send Message" />
+                    </form>
+                  </div> -->
+                </div>
               </div>
             </div>
-          </div>
-          <div class="gallery_image gallery_5">
-            <a href="images/gallery-1.jpg" class="icon image-popup">
-              <!-- <span class="icon-expand"></span> -->
-              <span><i class="fas fa fa-angle-double-right"></i></span>
-            </a>
-            <div class="gallery_text_container">
-              <div class="text_content">
-                <span>Nature</span>
-                <h2>Beautiful Work</h2>
-              </div>
-            </div>
-          </div>
-          <div class="gallery_image gallery_6">
-            <a href="images/gallery-1.jpg" class="icon image-popup">
-              <!-- <span class="icon-expand"></span> -->
-              <span><i class="fas fa fa-angle-double-right"></i></span>
-            </a>
-            <div class="gallery_text_container">
-              <div class="text_content">
-                <span>Nature</span>
-                <h2>Beautiful Work</h2>
-              </div>
+            <div class="welcome_item_2">
+              <div class="welcome_image"></div>
             </div>
           </div>
         </div>
