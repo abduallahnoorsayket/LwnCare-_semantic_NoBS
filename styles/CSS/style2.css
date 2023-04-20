@@ -443,6 +443,9 @@ a {
   padding: 30px 20px 112px;
   background: white;
 }
+.services .card_content {
+  margin-top: 35px;
+}
 .services_card {
   width: 25%;
   /* width: 18rem; */
@@ -464,8 +467,9 @@ a {
   height: 50px;
   border-radius: 50%;
   /* margin-right: 4px; */
-  color: #000000;
-  padding: 40px 20px;
+  color: #4e9525;
+  padding: 30px 35px;
+  font-size: 40px;
 }
 .services_card .card-title {
   font-weight: bold;
@@ -563,7 +567,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 780px;
+  height: 760px;
 }
 .welcome_text_container {
   padding: 48px 25px;
@@ -1659,33 +1663,38 @@ html, body {
 .form-group {
   margin-bottom: 1rem;
 }
-.contactForm .label {
+#contact_us .welcome_image {
+  height: 630px;
+}
+#contact_us .contactForm .label {
   color: #4e9525;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
 }
-.contactForm .form-control {
+#contact_us .contactForm .form_control_2 {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  outline: none;  
+  outline: none;
+  padding: 15px 0 0px 0;
+  margin: 0px 0 20px 0;
+}
+#contact_us textarea {
+  height: 92px !important;
 }
 
-.form-control {
-  height: 52px !important;
+#contact_us .form_control_2 {
+  height: 52px;
   background: #fff !important;
   color: #000000 !important;
   font-size: 18px;
   border-radius: 5px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  /*  */
   display: block;
   width: 100%;
-  height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -1701,6 +1710,49 @@ html, body {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
+}
+.name_email_input_container {
+  display: flex;
+  gap: 30px;
+}
+.input_item_1 {
+  width: 50%;
+}
+.input_item_2 {
+  width: 50%;
+}
+/* Contact US page responsive */
+@media (max-width: 1000px) {
+  .icon_list {
+    padding: 7rem 1.2rem;
+    background: #f8f9fa;
+  }
+  #contact_us .welcome_image {
+    height: 630px;
+  }
+}
+
+@media (max-width: 700px) {
+  .icon_list_container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #contact_us .welcome_item_1 {
+    width: 100%;
+  }
+  #contact_us .welcome_item_2 {
+    width: 100%;
+  }
+  .name_email_input_container {
+    flex-direction: column;
+  }
+  .input_item_1 {
+    width: 100%;
+  }
+  .input_item_2 {
+    width: 100%;
+  }
 }
 /*  CSS form */
 
